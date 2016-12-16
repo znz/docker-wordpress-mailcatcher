@@ -20,7 +20,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - "./mu-plugins/mailcatcher.php:/var/www/html/wp-content/mu-plugins/mailcatcher.php"
+      - "./mu-plugins:/var/www/html/wp-content/mu-plugins"
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
